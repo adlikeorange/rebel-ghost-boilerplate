@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 // Load environment variables from .env file
 dotenv.config();
 
-const configPath = path.join(__dirname, 'config.production.json');
+const configPath = path.join(__dirname, '..', 'config.production.json');
 
 function createConfig() {
   const config = {
@@ -17,13 +17,12 @@ function createConfig() {
       host: '0.0.0.0'
     },
     database: {
-      client: 'pg',
+      client: 'mysql',
       connection: {
         host: process.env.DB_HOST,
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME || 'ghost',
-        charset: 'utf8'
+        database: process.env.DB_NAME || 'ghost'
       }
     },
     logging: {
