@@ -35,7 +35,7 @@ if (fs.existsSync(source)) {
 
 // Call create-config.js script
 const { exec } = require('child_process');
-exec('node scripts/create-config.js', (error, stdout, stderr) => {
+exec('node script/create-config.js', (error, stdout, stderr) => {
   if (error) {
     console.error(`Error executing create-config.js: ${error.message}`);
     return;
