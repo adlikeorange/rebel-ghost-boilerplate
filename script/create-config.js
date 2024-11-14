@@ -31,7 +31,7 @@ function createConfig() {
     },
     process: 'systemd',
     paths: {
-      contentPath: path.join(__dirname, '/content/')
+      contentPath: path.join(__dirname, '..', '/content/')
     }
   };
 
