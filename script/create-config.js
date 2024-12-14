@@ -78,9 +78,9 @@ function createConfig() {
     };
   } else {
     console.log('CLOUDINARY_URL not found, setting storage to local');
-    config.storage = {
-      active: 'LocalFileStorage'
-    };
+    // config.storage = {
+    //   active: 'LocalFileStorage'
+    // };
   }
 
   // Write the config to the file
