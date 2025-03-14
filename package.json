@@ -175,6 +175,7 @@
     "cookie-session": "2.1.0",
     "cors": "2.8.5",
     "dompurify": "3.2.3",
+    "dotenv": "^16.4.7",
     "downsize": "0.0.8",
     "express": "4.21.2",
     "express-brute": "1.0.1",
