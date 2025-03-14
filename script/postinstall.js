@@ -27,12 +27,12 @@ const copyDirectory = (src, dest) => {
 
 // DISABLED, instead of copying from node_modules, we will use the local version from /content/adapters/storage/cloudinary
 // Ensure destination directory exists and copy files
-// if (fs.existsSync(source)) {
-//   console.log(`Copying Cloudinary adapter from ${source} to ${destination}`);
-//   copyDirectory(source, destination);
-// } else {
-//   console.error('Cloudinary adapter not found in node_modules. Please install it.');
-// }
+if (fs.existsSync(source)) {
+  console.log(`Copying Cloudinary adapter from ${source} to ${destination}`);
+  copyDirectory(source, destination);
+} else {
+  console.error('Cloudinary adapter not found in node_modules. Please install it.');
+}
 
 // Call create-config.js script
 const { exec } = require('child_process');
