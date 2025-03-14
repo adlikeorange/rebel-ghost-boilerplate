@@ -28,7 +28,7 @@
 
 This boilerplate is a pre-configured Ghost blog setup optimized for deployment on [Railway](https://railway.app?referralCode=-Yg50p). It includes a complete backend and admin dashboard, with support for MySQL database, Cloudinary image storage, and Mailgun email integration. The project is ready to use as-is when hosted on Railway.
 
-Updated to `version 5.100.1` 🥳
+Updated to `version 5.112.0` 🥳
 
 ## Preconfigured Features & Integrations
 
