@@ -2,4 +2,3 @@
 /content/logs/*.log
 .env
 config.production.json
-/content/adapters/storage/cloudinary
