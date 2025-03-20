@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Define paths
-const source = path.join(__dirname, '..', 'node_modules', 'ghost-storage-cloudinary');
+const source = path.join(__dirname, '..', 'node_modules', 'ghost-storage-cloudinary-v2');
 const destination = path.join(__dirname, '..', 'content', 'adapters', 'storage', 'cloudinary');
 
 // Function to copy directory recursively
