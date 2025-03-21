@@ -13,7 +13,7 @@
       <img alt="Railway logo" src="https://railway.app/brand/logo-light.svg" width=100>
     </picture>
   </a>
-</p>
+</p> 
 
 <h2 align="center">
   Ghost Blog Starter<br>
