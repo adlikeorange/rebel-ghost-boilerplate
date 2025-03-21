@@ -3,38 +3,45 @@
 const fs = require('fs');
 const path = require('path');
 
-// Define paths
-const source = path.join(__dirname, '..', 'node_modules', 'ghost-storage-cloudinary-v2');
-const destination = path.join(__dirname, '..', 'content', 'adapters', 'storage', 'cloudinary');
-
-// Function to copy directory recursively
-const copyDirectory = (src, dest) => {
-  if (!fs.existsSync(dest)) {
-    fs.mkdirSync(dest, { recursive: true });
-  }
-
-  fs.readdirSync(src).forEach((item) => {
-    const srcPath = path.join(src, item);
-    const destPath = path.join(dest, item);
-
-    if (fs.lstatSync(srcPath).isDirectory()) {
-      copyDirectory(srcPath, destPath);
-    } else {
-      fs.copyFileSync(srcPath, destPath);
+// Function to recursively list directory contents
+const listDirectory = (dir, prefix = '') => {
+  const items = fs.readdirSync(dir);
+  items.forEach(item => {
+    const itemPath = path.join(dir, item);
+    console.log(`${prefix}${item}`);
+    if (fs.lstatSync(itemPath).isDirectory()) {
+      listDirectory(itemPath, `${prefix}  `);
     }
   });
 };
 
-// DISABLED, instead of copying from node_modules, we will use the local version from /content/adapters/storage/cloudinary
-// Ensure destination directory exists and copy files
-if (fs.existsSync(source)) {
-  console.log(`Copying Cloudinary adapter from ${source} to ${destination}`);
-  copyDirectory(source, destination);
-} else {
-  console.error('Cloudinary adapter not found in node_modules. Please install it.');
+// Log environment and paths
+console.log('\nEnvironment Info:');
+console.log('----------------');
+console.log('Current working directory:', process.cwd());
+console.log('__dirname:', __dirname);
+
+const adapterPath = path.join(__dirname, '..', 'content', 'adapters', 'storage', 'cloudinary');
+console.log('\nAdapter path:', adapterPath);
+console.log('Adapter exists:', fs.existsSync(adapterPath));
+
+if (fs.existsSync(adapterPath)) {
+  console.log('\nAdapter directory contents:');
+  console.log('-------------------------');
+  listDirectory(adapterPath);
 }
 
-// Call create-config.js script
+// Log full content/adapters directory
+const adaptersPath = path.join(__dirname, '..', 'content', 'adapters');
+console.log('\nFull content/adapters directory:', adaptersPath);
+console.log('------------------------------');
+if (fs.existsSync(adaptersPath)) {
+  listDirectory(adaptersPath);
+} else {
+  console.log('Adapters directory does not exist!');
+}
+
+// Call create-config.js script to set up Ghost configuration
 const { exec } = require('child_process');
 exec('node script/create-config.js', (error, stdout, stderr) => {
   if (error) {
