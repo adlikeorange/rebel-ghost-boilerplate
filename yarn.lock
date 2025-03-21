@@ -2948,7 +2948,7 @@
     "@tryghost/root-utils" "^0.3.30"
     debug "^4.3.1"
 
-"@tryghost/debug@^0.1.13", "@tryghost/debug@^0.1.17", "@tryghost/debug@^0.1.26", "@tryghost/debug@^0.1.33", "@tryghost/debug@^0.1.34":
+"@tryghost/debug@^0.1.13", "@tryghost/debug@^0.1.26", "@tryghost/debug@^0.1.33", "@tryghost/debug@^0.1.34":
   version "0.1.34"
   resolved "https://registry.yarnpkg.com/@tryghost/debug/-/debug-0.1.34.tgz#cac7100b092b358e54637ed620dc9cd9ac76355c"
   integrity sha512-TuTI/BCktv3NY+QhJWrcDBRN6qxgy7zgKHj18MzCZEqPVRXdzYdsd8ldO/Q7jSNgHjf0UHuwDTc5VFuNzCUABA==
@@ -3033,7 +3033,7 @@
   version "5.112.0"
   resolved "file:components/tryghost-email-suppression-list-5.112.0.tgz#273ac10a958ea1dedf3fc00b5300d0800924393f"
 
-"@tryghost/errors@1.3.5", "@tryghost/errors@1.3.6", "@tryghost/errors@^1.2.18", "@tryghost/errors@^1.2.26", "@tryghost/errors@^1.2.3", "@tryghost/errors@^1.3.5", "@tryghost/errors@^1.3.6", "@tryghost/errors@^1.3.7":
+"@tryghost/errors@1.3.5", "@tryghost/errors@1.3.6", "@tryghost/errors@^1.2.26", "@tryghost/errors@^1.2.3", "@tryghost/errors@^1.3.5", "@tryghost/errors@^1.3.6", "@tryghost/errors@^1.3.7":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.3.5.tgz#f4ef8e5c41a8a37456f2285271124180685827ae"
   integrity sha512-iOkiHGnYFqSdFM9AVlgiL56Qcx6V9iQ3kbDKxyOAxrhMKq1OnOmOm7tr1CgGK1YDte9XYEZmR9hUZEg+ujn/jQ==
@@ -4568,7 +4568,7 @@ bl@^4.0.3, bl@^4.1.0:
     inherits "^2.0.4"
     readable-stream "^3.4.0"
 
-bluebird@^3.1.1, bluebird@^3.4.1, bluebird@^3.5.0, bluebird@^3.7.0, bluebird@^3.7.2:
+bluebird@^3.1.1, bluebird@^3.4.1, bluebird@^3.5.0, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -5258,18 +5258,11 @@ clone@^1.0.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
 
-cloudinary-core@^2.13.0:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/cloudinary-core/-/cloudinary-core-2.13.1.tgz#7abb62bf1db41773acfe1eebb7fd40571c34495b"
-  integrity sha512-z53GPNWnvU0Zi+ns8CIVbZBfj7ps/++zDvwIyiFuq5p1MoK+KUCg0k5mBceDDHTnx1gHmHUd9aohS+gDxPNt6w==
-
-cloudinary@^1.30.0:
-  version "1.41.3"
-  resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-1.41.3.tgz#dc96725122099349adba6ab4eccda84fa13e8c2e"
-  integrity sha512-4o84y+E7dbif3lMns+p3UW6w6hLHEifbX/7zBJvaih1E9QNMZITENQ14GPYJC4JmhygYXsuuBb9bRA3xWEoOfg==
+cloudinary@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-2.6.0.tgz#e8d41b146d2ad8a4d9bce4680496406122e82b9f"
+  integrity sha512-FIlny9RR5LPgkMioG4V7yUpC6ASyIFQMWfx4TgOi/xBeLxJTegbyQc3itiXL0b0lDlSaL0KyT2THEw6osrKqpQ==
   dependencies:
-    cloudinary-core "^2.13.0"
-    core-js "^3.30.1"
     lodash "^4.17.21"
     q "^1.5.1"
 
@@ -5583,11 +5576,6 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha512-XgZ0pFcakEUlbwQEVNg3+QAis1FyTL3Qel9FYy8pSkQqoG3PNoT0bOCQtOXcOkur21r2Eq2kI+IE+gsmAEVlYw==
-
-core-js@^3.30.1:
-  version "3.41.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.41.0.tgz#57714dafb8c751a6095d028a7428f1fb5834a776"
-  integrity sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -7339,28 +7327,6 @@ ghost-storage-base@1.0.0:
   dependencies:
     moment "2.27.0"
 
-ghost-storage-base@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ghost-storage-base/-/ghost-storage-base-1.1.1.tgz#63caec4af9cb2f5cd0271cc87bf85cbadd135de8"
-  integrity sha512-MRokcZctPKO/Oonn2W55dYNZRPn75lBoSdoOc1BtwL7wm/Sq/Qx7ovx1H5seZhCReFs8QOeUXvX9dXuguBSnnQ==
-  dependencies:
-    moment "2.27.0"
-
-ghost-storage-cloudinary-v2@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/ghost-storage-cloudinary-v2/-/ghost-storage-cloudinary-v2-3.0.1.tgz#ca13bc55fae218d7980abf29402047e8e4d5d5d3"
-  integrity sha512-iuwoq7T3pAgOFe1bhRo/cer9wkw2neNWiaNTZZefIlD+4eU++oC5foktiFkHPzDOIVZxcnNXoNZDi0FbvwWwtw==
-  dependencies:
-    "@tryghost/debug" "^0.1.17"
-    "@tryghost/errors" "^1.2.18"
-    bluebird "^3.7.0"
-    cloudinary "^1.30.0"
-    ghost-storage-base "^1.1.1"
-    got "^11.0"
-    image-size "^1.0.1"
-    lodash "^4.17.20"
-    os-locale "^6.0.2"
-
 github-from-package@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/github-from-package/-/github-from-package-0.0.0.tgz#97fb5d96bfde8973313f20e8288ef9a167fa64ce"
@@ -7490,7 +7456,7 @@ gopd@^1.0.1, gopd@^1.2.0:
   resolved "https://registry.yarnpkg.com/gopd/-/gopd-1.2.0.tgz#89f56b8217bdbc8802bd299df6d7f1081d7e51a1"
   integrity sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==
 
-got@11.8.6, got@^11.0, got@~11.8.0:
+got@11.8.6, got@~11.8.0:
   version "11.8.6"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.6.tgz#276e827ead8772eddbcfc97170590b841823233a"
   integrity sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==
@@ -7968,7 +7934,7 @@ image-extensions@~1.1.0:
   resolved "https://registry.yarnpkg.com/image-extensions/-/image-extensions-1.1.0.tgz#b8e6bf6039df0056e333502a00b6637a3105d894"
   integrity sha512-P0t7ByhK8Jk9TU05ct/7+f7h8dNuXq5OY4m0IO/T+1aga/qHkpC0Wf472x3FLdq/zFDG17pgapCM3JDTxwZzow==
 
-image-size@1.2.0, image-size@^1.0.0, image-size@^1.0.1:
+image-size@1.2.0, image-size@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-1.2.0.tgz#312af27a2ff4ff58595ad00b9344dd684c910df6"
   integrity sha512-4S8fwbO6w3GeCVN6OPtA9I5IGKkcDMPcKndtUlpJuCwu7JLjtj7JZpwqLuyY2nrmQT3AWsCJLSKPsc2mPBSl3w==
@@ -8096,11 +8062,6 @@ intl@1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/intl/-/intl-1.2.5.tgz#82244a2190c4e419f8371f5aa34daa3420e2abde"
   integrity sha512-rK0KcPHeBFBcqsErKSpvZnrOmWOj+EmDkyJ57e90YWaQNqbcivcqmKDlHEeNprDWOsKzPsh1BfSpPQdDvclHVw==
-
-invert-kv@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-3.0.1.tgz#a93c7a3d4386a1dc8325b97da9bb1620c0282523"
-  integrity sha512-CYdFeFexxhv/Bcny+Q0BfOV+ltRlJcd4BBZBYFX/O0u4npJrgZtIcjokegtiSMAvlMTJ+Koq0GBCc//3bueQxw==
 
 ioredis@^4.14.1:
   version "4.28.5"
@@ -9119,13 +9080,6 @@ lazystream@^1.0.0:
   integrity sha512-b94GiNHQNy6JNTrt5w6zNyffMrNkXZb3KTkCZJb2V1xaEGCk093vkZ2jk3tpaeP33/OiXC+WvK9AxUebnf5nbw==
   dependencies:
     readable-stream "^2.0.5"
-
-lcid@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/lcid/-/lcid-3.1.1.tgz#9030ec479a058fc36b5e8243ebaac8b6ac582fd0"
-  integrity sha512-M6T051+5QCGLBQb8id3hdvIW8+zeFV2FyBGFS9IEK5H9Wt4MueD4bW1eWikpHgZp+5xR3l5c8pZUkQsIA0BFZg==
-  dependencies:
-    invert-kv "^3.0.0"
 
 leaky-bucket@2.2.0:
   version "2.2.0"
@@ -10709,13 +10663,6 @@ ora@^5.4.1:
     log-symbols "^4.1.0"
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
-
-os-locale@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/os-locale/-/os-locale-6.0.2.tgz#2e5122600f48cd9b846524c07f898db1c596bf20"
-  integrity sha512-qIb8bzRqaN/vVqEYZ7lTAg6PonskO7xOmM7OClD28F6eFa4s5XGe4bGpHUHMoCHbNNuR0pDYFeSLiW5bnjWXIA==
-  dependencies:
-    lcid "^3.1.1"
 
 os-tmpdir@~1.0.2:
   version "1.0.2"

@@ -169,6 +169,7 @@
     "chalk": "4.1.2",
     "charset": "1.0.1",
     "cheerio": "0.22.0",
+    "cloudinary": "^2.6.0",
     "common-tags": "1.8.2",
     "compression": "1.8.0",
     "connect-slashes": "1.4.0",
